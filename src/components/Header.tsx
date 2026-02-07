@@ -5,8 +5,9 @@ const Header = () => {
     <header className="bg-light shadow-sm">
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container">
-          <Link className="navbar-brand fw-bold" to="/">
-            Jeju Maker Club
+          <Link className="navbar-brand fw-bold d-flex align-items-center" to="/">
+            <img src="/images/logo.png" alt="맹글멍 Logo" style={{ height: '30px', marginRight: '8px' }} />
+            HOME
           </Link>
           <button
             className="navbar-toggler"
@@ -21,6 +22,7 @@ const Header = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
+
               <li className="nav-item">
                 <Link className="nav-link" to="/">
                   홈
@@ -29,6 +31,11 @@ const Header = () => {
               <li className="nav-item">
                 <Link className="nav-link" to="/manuals">
                   매뉴얼
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/makerspaces">
+                  메이커스페이스
                 </Link>
               </li>
             </ul>

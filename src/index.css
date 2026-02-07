@@ -1,3 +1,84 @@
 body {
   font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
 }
+
+/* Custom styles for react-calendar */
+.react-calendar {
+  width: 100%;
+  max-width: 300px; /* Adjust as needed */
+  border: 1px solid #a0a096;
+  font-family: 'Pretendard', sans-serif;
+  line-height: 1.125em;
+  margin: 0 auto; /* Center the calendar */
+}
+
+.react-calendar__tile--active {
+  background: #006edc;
+  color: white;
+}
+
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+  background: #006edc;
+}
+
+.react-calendar__navigation button {
+  min-width: 44px;
+  background: none;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #e6e6e6;
+}
+
+.react-calendar__navigation button[disabled] {
+  background-color: #f0f0f0;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #d10000;
+}
+
+.react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Style for event indicator */
+.event-indicator {
+  font-size: 0.8em;
+  color: #ff0000; /* Red dot for events */
+  text-align: center;
+  margin-top: -8px; /* Adjust vertical position */
+}
+
+/* Custom button style for light magenta */
+.btn-light-magenta {
+  color: #e55c40; /* Requested text color */
+  background-color: transparent; /* Remove background color */
+  border-color: #e55c40; /* Requested border color */
+}
+
+.btn-light-magenta:hover {
+  color: #e55c40; /* Maintain text color on hover */
+  background-color: rgba(229, 92, 64, 0.1); /* Light tint background on hover (e55c40 converted to RGB) */
+  border-color: #e55c40; /* Maintain border color on hover */
+}
+
+/* Style for Saturday tiles in react-calendar */
+.saturday-tile {
+  color: #007bff; /* Bootstrap primary blue */
+}
+
+/* Custom font sizes */
+.btn-md-font {
+  font-size: 1rem !important; /* Override btn-lg if applied */
+}
+
+.p-regular-font {
+  font-size: 1rem !important;
+}
+
+

@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Manuals from './pages/Manuals';
+import Makerspaces from './pages/Makerspaces';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/manuals" element={<Manuals />} />
+            <Route path="/makerspaces" element={<Makerspaces />} />
           </Routes>
         </main>
         <Footer />
