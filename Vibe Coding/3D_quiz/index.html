@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D 프린터 운용기능사 필기 퀴즈</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-selection-container" class="quiz-container">
+        <h1>3D프린터운용기능사 필기 퀴즈</h1>
+        <p>풀고 싶은 번호를 선택하세요:</p>
+        <select id="quiz-select">
+            <option value="시트1">3D 프린터 운용기능사 필기 퀴즈1</option>
+            <option value="시트2">3D 프린터 운용기능사 필기 퀴즈2</option>
+            <option value="시트3">3D 프린터 운용기능사 필기 퀴즈3</option>
+            <option value="시트4">3D 프린터 운용기능사 필기 퀴즈4</option>
+        </select>
+        <button id="start-quiz-button" class="next-btn">퀴즈 시작</button>
+    </div>
+
+    <div id="quiz-main-container" class="quiz-container" style="display: none;">
+        <h1 id="quiz-title"></h1> <!-- Dynamic title -->
+        <div id="question-container">
+            <p id="question-text"></p>
+            <div id="answer-buttons" class="btn-grid">
+                <!-- Answer buttons will be inserted here by JavaScript -->
+            </div>
+        </div>
+        <div id="controls">
+            <button id="next-button" class="next-btn">다음 문제</button>
+        </div>
+        <div id="feedback-container">
+            <p id="feedback-text"></p>
+        </div>
+        <div id="score-container">
+            <p>점수: <span id="score">0</span> / <span id="total-questions">0</span></p>
+        </div>
+        <div class="main-page-link-container">
+            <a href="#" id="main-page-link" class="main-page-text-link">메인페이지</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
